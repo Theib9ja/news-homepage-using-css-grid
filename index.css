@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+body {
+	font-family: 'Inter', sans-serif;
+	font-size: 15px;
+	background-color: hsl(36, 100%, 99%);
+	height: 500px;
+}
+
+p {
+	color: hsl(233, 8%, 79%);
+	line-height: 25px;
+}
+.nav-img {
+	float: left;
+}
+
+.nav-links {
+	float: right;
+}
+
+.nav-links a {
+	text-decoration: none;
+	padding: 0px 10px;
+	color: hsl(236, 13%, 42%);
+}
+
+.nav {
+	margin: 100px;
+	margin-right: 270px;
+	margin-top: 40px;
+
+}
+
+.main {
+	clear: both;
+	margin-top: 20px;
+/*	float: left;*/
+	display: grid;
+	grid-template-columns: 2fr 1fr 1fr;
+}
+
+.contents-aside {
+	background-color: hsl(240, 100%, 5%);
+	padding: 15px;
+	line-height: 25px;
+	width: 280px;
+/*	margin-left: 20px;*/
+	order: 2;
+}
+
+.image-1 {
+grid-column-start: 1;
+grid-column-end: 3;
+order: 1;
+}
+
+.contents-aside h1 {
+	color: hsl(35, 77%, 62%);
+}
+
+.contents-aside p {
+	font-size: 13px;
+}
+
+
+.first-p h3 {
+	color: white;
+}
+
+.bright {
+	margin-top: -180px;
+	width: 300px;
+	font-size: 25px;
+	font-weight: 500;
+	line-height: 50px;
+	order: 3;
+}
+
+.promise {
+	margin-top: -160px;
+	width: 350px;
+	margin-right: 45px;
+	line-height: 25px;
+	order: 4;
+}
+
+.promise p {
+	color: hsl(236, 13%, 42%);
+}
+
+.promise button {
+	width: 130px;
+	height: 40px;
+	background-color: hsl(5, 85%, 63%);
+	border: none;
+	color: white;
+	cursor: pointer;
+}
+
+.gaming {
+	display: flex;
+	clear: both;
+	justify-content: space-between;
+}
+
+.pcs1, .pcs2, .pcs3 {
+	display: flex;
+	width: 310px;
+	margin-top: 20px;
+}
+
+.pcs3 {
+	margin-right: 3px;
+}
+
+.pcs2 {
+	margin-left: 60px;
+}
+
+.contents p {
+	color: hsl(236, 13%, 42%);
+	font-size: 13px;
+	line-height: 17px;
+}
+
+.contents h1 {
+	color: hsl(233, 8%, 79%);
+}
+
+.contents {
+	margin: -10px 0px 0px 20px;
+	line-height: 10px;
+}
+
+@media screen and (max-width: 800px) {
+	.nav-links {
+		display: none;
+	}
+
+	.nav-img {
+		float: none;
+	}
+
+	.nav {
+		margin: 0px;
+	}
+
+	.main {
+		display: block;
+	}
+
+	.image-1 img {
+		width: 350px;
+		height: 300px;
+		margin-left: 15px;
+	}
+	.contents-aside {
+		width: 320px;
+		float: none;
+		margin-top: 50px;
+		margin-left: 15px;
+	}
+
+	.contents-aside p {
+		color: hsl(233, 8%, 79%);
+	}
+
+	.nav-img {
+		margin-left: 15px;
+	}
+
+	.bright {
+		margin-left: 15px;
+		width: 320px;
+		font-size: 20px;
+		font-weight: bolder;
+		margin-top: 0px;
+	}
+
+	.promise {
+		margin-left: 15px;
+		font-weight: bold;
+		margin-top: 0px;
+	}
+
+	.gaming {
+		display: block;
+		margin-top: 70px;
+	}
+
+	.pcs1, .pcs2, .pcs3 {
+		margin-left: 15px;
+	}
+}
+
+
+@media screen and (max-width: 360px){
+	body {
+/*		overflow-x: hidden;*/
+	}
+
+	.image-1 img {
+		width: 310px;
+	}
+
+	.contents-aside {
+		width: 300px;
+	}
+
+	.bright {
+		width: 300px;
+	}
+
+	.promise {
+		width: 300px;
+	}
+}
+
+@media screen and (min-width: 810px) and (max-width: 1280px) {
+	.image-1 img {
+		width: 570px;
+	}
+
+	.contents-aside {
+		margin-left: -90px;
+	}
+
+	.pcs2 h3, .pcs3 h3 {
+		line-height: 20px;
+	}
+
+	.promise {
+		width: 250px;
+		margin-left: -150px;
+	}
+}
